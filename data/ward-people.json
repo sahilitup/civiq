@@ -1,0 +1,273 @@
+{
+  "_sources": {
+    "councillors": "https://www.mcg.gov.in/contact/ward-wise-contacts (elected March 2025)",
+    "officers": "https://www.mcg.gov.in/contact/office-contacts",
+    "checked": "2026-11-18"
+  },
+  "councillors": {
+    "1": {
+      "name": "Sunder Singh",
+      "email": "sunderdlf3@yahoo.com"
+    },
+    "2": {
+      "name": "Jyotsna Yadav",
+      "email": "ward2mcg@gmail.com"
+    },
+    "3": {
+      "name": "Rakesh Yadav",
+      "email": "rakeshyadav9899787875@gmail.com"
+    },
+    "4": {
+      "name": "Pardeep Kumar",
+      "email": "95.sumit.11@gmail.com"
+    },
+    "5": {
+      "name": "Ramavtar Rana",
+      "email": "m.c.g.ward5@gmail.com"
+    },
+    "6": {
+      "name": "Satpal",
+      "email": "satpaljanghu1001@gmail.com"
+    },
+    "7": {
+      "name": "Dinesh",
+      "email": "dinesh.dhaiya@gmail.com"
+    },
+    "8": {
+      "name": "Naresh Kataria",
+      "email": "nareshkataria060970@gmail.com"
+    },
+    "9": {
+      "name": "Avneesh Raghav",
+      "email": "Avnishraghav1@gmail.com"
+    },
+    "10": {
+      "name": "Mahabir",
+      "email": "mahavir.52rao@gmail.com"
+    },
+    "11": {
+      "name": "Kuldeep Yadav",
+      "email": "Kuldeepyadav369@gmail.com"
+    },
+    "12": {
+      "name": "Ruchi",
+      "email": "gagankilhor5050@gmail.com"
+    },
+    "13": {
+      "name": "Pawan Kumar",
+      "email": "pkpawankumarsaini@gmail.com"
+    },
+    "14": {
+      "name": "Pratham Vashisht",
+      "email": "prathamvashishtmcg@gmail.com"
+    },
+    "15": {
+      "name": "Bharti Harsana",
+      "email": "bhartimanishharsana@gmail.com"
+    },
+    "16": {
+      "name": "Vikramjeet Singh",
+      "email": "vikramjeet803@gmail.com"
+    },
+    "17": {
+      "name": "Neha Devatwal",
+      "email": "devatwalkamal0088@gmail.com"
+    },
+    "18": {
+      "name": "Jyoti Yadav",
+      "email": "Yjyoti45@gmail.com"
+    },
+    "19": {
+      "name": "Raj Singh Amit",
+      "email": "rajsinghsingh0507@gmail.com"
+    },
+    "20": {
+      "name": "Narayan Bhadana",
+      "email": "bhadananarayan@gmail.com"
+    },
+    "21": {
+      "name": "Sonia Yadav",
+      "email": "sonia.ydv@gmail.com"
+    },
+    "22": {
+      "name": "Vikas Yadav",
+      "email": "vikasyadavforpeople@gmail.com"
+    },
+    "23": {
+      "name": "Kunal Yadav",
+      "email": "parshadkunalyadav@gmail.com"
+    },
+    "24": {
+      "name": "Aarti Yadav",
+      "email": "aartiyadav0075@gmail.com"
+    },
+    "25": {
+      "name": "Anup Singh",
+      "email": "anup.Singh17a@gmail.com"
+    },
+    "26": {
+      "name": "Sunita Rani",
+      "email": "sunitaranirani1977@gmail.com"
+    },
+    "27": {
+      "name": "Ashish Gupta",
+      "email": "ag.gurugram@gmail.com"
+    },
+    "28": {
+      "name": "Dharmbir Bhangrola",
+      "email": "dharm16665@gmail.com"
+    },
+    "29": {
+      "name": "Usha",
+      "email": "rudraverma052@gmail.com"
+    },
+    "30": {
+      "name": "Madhu Batra",
+      "email": "yashbatra2476@yahoo.in"
+    },
+    "31": {
+      "name": "Dalip Kumar Sahani",
+      "email": "sahnidalip@gmail.com"
+    },
+    "32": {
+      "name": "Vijay Parmer",
+      "email": "vijayparmar3622@gmail.com"
+    },
+    "33": {
+      "name": "Sarika Bharadwaj",
+      "email": "laxman.vihar4@gmail.com"
+    },
+    "34": {
+      "name": "Surekha",
+      "email": "Surekhachauhanward34@gmail.com"
+    },
+    "35": {
+      "name": "Parminder Kataria",
+      "email": "pkataria6994@gmail.com"
+    },
+    "36": {
+      "name": "Rekha",
+      "email": "rekhasaini1076@gmail.com"
+    }
+  },
+  "zones": {
+    "Zone I": {
+      "jc": {
+        "name": "Sapna Yadav, HCS",
+        "phone": "01242372885",
+        "email": "jc1@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Jitender",
+        "phone": "9818452201",
+        "email": "ssi1@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Tushar Yadav",
+        "phone": "9818460252",
+        "email": "ee1@mcg.gov.in"
+      }
+    },
+    "Zone II": {
+      "jc": {
+        "name": "Naresh Kumar, HCS",
+        "phone": "01242320885",
+        "email": "jc2@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Harish",
+        "phone": "9971123511",
+        "email": "ssi2@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Pardeep Kumar",
+        "phone": "9821395225",
+        "email": "ee2@mcg.gov.in"
+      }
+    },
+    "Zone III": {
+      "jc": {
+        "name": "Preetpal Singh Mothsara, HCS",
+        "phone": "01242370330",
+        "email": "jc3@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Bhupender",
+        "phone": "9654841272",
+        "email": "si3@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Hitesh Dahiya",
+        "phone": "9466531555",
+        "email": "ee3@mcg.gov.in"
+      }
+    },
+    "Zone IV": {
+      "jc": {
+        "name": "Jaivir Yadav, HCS",
+        "phone": "01242977645",
+        "email": "jc4@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Bhupender",
+        "phone": "9467640748",
+        "email": "ssi4@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Parveen Raghav",
+        "phone": "9999716115",
+        "email": "ee4@mcg.gov.in"
+      }
+    },
+    "Zone V": {
+      "jc": {
+        "name": "Dr. Ashish Singla",
+        "phone": "01242304287",
+        "email": "jc5@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Naresh",
+        "phone": "9354661937",
+        "email": "ssi5@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Sandeep Kumar Dhundhwal",
+        "phone": "9910329207",
+        "email": "ee5@mcg.gov.in"
+      }
+    },
+    "Zone VI": {
+      "jc": {
+        "name": "Ravindra Malik, HCS",
+        "phone": "01242392111",
+        "email": "jc6@mcg.gov.in"
+      },
+      "ssi": {
+        "name": "Devender",
+        "phone": "8295200229",
+        "email": "ssi6@mcg.gov.in"
+      },
+      "ee": {
+        "name": "Kuldeep Yadav",
+        "phone": "9821395241",
+        "email": "ee6@mcg.gov.in"
+      }
+    }
+  },
+  "_zone_note": "Joint Commissioner ward lists are stated on MCG's site. Senior Sanitary Inspector (SSI) and Executive Engineer (EE) offices are numbered I-VI; matching them to Zones I-VI by number is an assumption.",
+  "city": {
+    "commissioner": {
+      "name": "Dr. Pankaj, IAS",
+      "phone": "01242370911",
+      "email": "cmc@mcg.gov.in",
+      "photo": "/people/commissioner-pankaj.jpg",
+      "photoCredit": "Municipal Corporation of Gurugram (mcg.gov.in)"
+    },
+    "jc_sbm": {
+      "name": "Preetpal Singh Mothsara, HCS",
+      "role": "Joint Commissioner, Swachh Bharat Mission",
+      "phone": "01242370330",
+      "email": "jcsbm@mcg.gov.in"
+    }
+  }
+}

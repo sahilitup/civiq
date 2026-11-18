@@ -1,0 +1,47 @@
+old ward 4 → new ward 2 (7/7 localities)
+old ward 6 → new ward 35 (4/5 localities)
+old ward 10 → new ward 33 (4/4 localities)
+old ward 11 → new ward 32 (5/6 localities)
+old ward 17 → new ward 25 (8/9 localities)
+old ward 19 → new ward 28 (3/4 localities)
+old ward 20 → new ward 28 (3/4 localities)
+old ward 21 → new ward 29 (8/9 localities)
+old ward 31 → new ward 21 (3/4 localities)
+old ward 35 → new ward 1 (4/4 localities)
+
+Ward 1: 5 placed (Nathupur, DLF Phase 3, National Media Centre, Ambience Island, Garden Estate) | not found: Sikanderpur Ghosi
+Ward 2: 8 placed (DLF Phase 2, DLF Cyber City, Heritage City, Beverly Park, Sirhaul, Dundahera, Udyog Vihar Phase 1, Maruti Udyog) | rejected: Udyog Vihar Phase 2 (same point as another locality); Udyog Vihar Phase 3 (same point as another locality); Udyog Vihar Phase 4 (same point as another locality); Udyog Vihar Phase 5 (same point as another locality)
+Ward 3: 5 placed (Carterpuri, Palam Vihar Extension, Mullahera, Sector 22, Sector 21) | not found: Nobel Enclave; Chippy Enclave
+Ward 4: 5 placed (Sector 23, Sector 1, Sector 2, Sector 3, Chauma)
+Ward 5: 8 placed (Sector 110, Sector 110A, Sector 111, Sector 112*, Sector 113*, Sector 114*, Sector 115*, Bajghera*) | not found: Nihal Colony; Sarai Alawardi | rejected: New Palam Vihar (matched "New Light Public School, Carterpuri Road, Palam Vihar")
+Ward 6: 9 placed (Sector 102*, Sector 102A*, Sector 103*, Sector 106*, Sector 107*, Sector 108*, Sector 109*, Dhankot*, Dharampur*) | not found: Daulatabad; Pawala Khusrupur; Kherki Majra; Mohammad Heri; Babupur
+Ward 7: 8 placed (Surat Nagar Phase 2, Dhanwapur, Sector 9B, Sector 37B, Sector 37D, Sector 100, Sector 101, Sector 104) | not found: Gadoli Khurd; Gadoli Kalan | outside MCG: Ram Vihar | rejected: Basai (matched "Basai Jhod Lake, Sector 9B, Gurugram")
+Ward 8: 2 placed (Sector 9, Sector 9A) | not found: Bhawani Enclave; Ambedkar Nagar; Devilal Colony; Ravi Nagar; Vishwakarma Colony
+Ward 9: 2 placed (Sector 10, Sector 37C) | not found: Krishna Nagar; Basai Enclave; Kadipur Industrial Area; Saraswati Enclave; Pace City 2 (skipped: wrong match) | rejected: Khandsa (matched "Atal Vatika Park, 4 marla ,khandsa road"); Udyog Vihar Phase 6 (9.1 km from the rest of the ward)
+Ward 10: 1 placed (Pace City 1) | not found: Kadipur; Shaktipur; Hari Nagar; Khandsa Road Industrial Area | rejected: Sector 10A (same point as another locality)
+Ward 11: 6 placed (Hans Enclave, Naharpur Rupa, Nitin Vihar, Malibu Town, Sector 47, Sector 33) | rejected: Shiv Colony (9.4 km from the rest of the ward); Teekli (9.2 km from the rest of the ward)
+Ward 12: 8 placed (Jharsa, Mohyal Colony, Greenwood City, Medicity, Sector 38, Sector 39, Islampur, South City 1)
+Ward 13: 3 placed (Sector 15 Part 2, Sector 31, Sector 40) | not found: Kirti Nagar; Prem Puri | rejected: Sector 15 Part 1 (matched "Sector 15, Manesar, Gurugram")
+Ward 14: 9 placed (Jal Vihar, Sector 46, Indira Colony, Sector 51, Mayfield Garden, Sushant Lok 3, Tigra, Sector 50, Sector 57)
+Ward 15: 7 placed (South City 2, Sector 49, Nirvana Country, Rosewood City, Sector 65*, Sector 66, Maidawas*) | not found: Nangli Umarpur; Ghasola
+Ward 16: 6 placed (Sector 71, Sector 73, Sector 74, Sector 34, Sector 72A, Uppal Southend) | not found: Fazilpur Jharsa | rejected: Behrampur (9.0 km from the rest of the ward)
+Ward 17: 6 placed (Sector 74A, Sector 75A, Sector 75, Sihi, Darbaripur, Palra*) | not found: Mohammadpur Jharsa; Narsinghpur; Begampur Khatola; Kherki Daula
+Ward 18: 6 placed (Badshahpur, Sector 67, Sector 68, Sector 69, Sector 70, Ramgarh*) | not found: Nurpur
+Ward 19: 4 placed (Bhondsi*, Naya Gaon*, Shri Ram Colony*, Shyam Kunj*) | not found: Mohan Nagar; Vatika Kunj; Defence Colony; Ekta Enclave
+Ward 20: 9 placed (Kadarpur*, Ullawas*, Bhandwari*, Gwal Pahari, Ghata, Sector 58, Sector 61*, Sector 62*, Sector 55) | not found: Balola
+Ward 21: 8 placed (Wazirabad, Ardee City, Sector 52, Sushant Lok 2, Sector 53, Sector 56, Sector 52A, Sector 54) | rejected: Suncity (4.6 km from the rest of the ward)
+Ward 22: 5 placed (DLF Phase 4, Sector 43, Sector 42, Sector 27, DLF Phase 5) | rejected: Sushant Lok 1 (same point as another locality)
+Ward 23: 5 placed (Saraswati Vihar, Chakkarpur, DLF Phase 1, Sector 28, Maruti Vihar) | rejected: Maruti Kunj (12.8 km from the rest of the ward)
+Ward 24: 6 placed (Sector 44, Sector 45, Sector 29, Sector 30, Vijay Vihar, Jal Vayu Vihar) | not found: Kanhai; Saini Khera | rejected: Silokhera (matched "Silokhera SEZ, Sector 30, Gurugram"); Moti Vihar (matched "GoMechanic (H.Q.), Landmark Tower, Moti Vihar")
+Ward 25: 8 placed (Sector 14, Sector 16, Sector 17, Sukhrali, Management Development Institute, Old DLF Colony, Chander Nagar, Prem Nagar) | not found: Canal Colony; Police Lines | rejected: Anamika Enclave (matched "Government Girls College, Mehrauli-Gurgaon Road, Mehrauli-Gurgaon Road"); Air Force Station Gurgaon (4.2 km from the rest of the ward)
+Ward 26: 4 placed (Sanjay Gram, Rajiv Nagar, Acharya Puri, Sector 12A) | not found: Rajiv Nagar West | rejected: Sheetla Colony (listed in 2 wards)
+Ward 27: 4 placed (Civil Lines, Friends Colony, Adarsh Nagar, Mini Secretariat) | not found: Baraf Khana; Roshan Pura; Gopal Nagar; Indira Puri; Jacubpura | rejected: Patel Nagar (matched "Patel Nagar, Mehrauli-Gurgaon Road, Shivaji Nagar")
+Ward 28: 4 placed (Om Nagar, Raj Nagar, Gandhi Nagar, Shiv Nagar) | not found: Rajiv Colony; Shanti Nagar; Anaj Mandi; Shivaji Park; Heera Nagar
+Ward 29: 2 placed (Baldev Nagar, Shivaji Nagar) | not found: Nai Abadi; Veer Nagar; Manohar Nagar; Feroz Gandhi Colony; Auto Market; Amar Colony; Aath Marla | rejected: Shakti Nagar (matched "Children park, 4/8, Shakti nagar road"); Laxmi Nagar (matched "Children park, 4/8, Shakti nagar road")
+Ward 30: 2 placed (Ram Nagar, Madanpuri) | not found: Arjun Nagar; Vijay Park; Nehru Lane; Jyoti Park
+Ward 31: 2 placed (Dayanand Colony, Mianwali Colony) | not found: Ashok Puri; Mahavir Pura; Lajpat Nagar; Subhash Nagar; Jawahar Nagar; Nai Basti; Pratap Nagar; Rattan Garden; Bhim Garden | rejected: Sanjay Colony (same point as another locality); Prem Nagar 1 (same point as another locality)
+Ward 32: 3 placed (Sector 7, Sector 7 Extension, Housing Board Colony) | not found: Shivpuri; Krishna Colony; Surya Vihar | rejected: New Colony (same point as another locality)
+Ward 33: 1 placed (Sector 4) | not found: Laxman Vihar Phase 1; Laxman Vihar Phase 2; Cancon Enclave
+Ward 34: 1 placed (Rajendra Park) | not found: Daulatabad Industrial Area; Tek Chand Nagar | rejected: Surat Nagar Phase 1 (same point as another locality)
+Ward 35: 2 placed (Sector 6, Apna Enclave) | not found: Bhim Garh Kheri | rejected: Sector 5 (matched "Sector 5, Manesar, Gurugram"); Ashok Vihar (same point as another locality); Ashok Vihar Phase 2 (same point as another locality)
+Ward 36: 2 placed (Ashok Vihar Phase 3, Gurgaon Village) | not found: Amanpura | rejected: Sheetla Colony (listed in 2 wards)

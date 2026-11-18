@@ -1,0 +1,13 @@
+{
+  "name": "civiq",
+  "version": "2.0.0",
+  "description": "CIVIQ: report garbage in Gurugram and track it until it is cleared.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js",
+    "seed": "node --no-warnings seed.js"
+  }
+}

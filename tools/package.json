@@ -1,0 +1,10 @@
+{
+  "name": "apna-kachra-tools",
+  "private": true,
+  "type": "module",
+  "description": "One-off scripts that build data/wards.geojson and data/assembly.geojson. Not needed to run the app.",
+  "devDependencies": {
+    "d3-delaunay": "6.0.4",
+    "polygon-clipping": "0.15.7"
+  }
+}

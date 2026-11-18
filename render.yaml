@@ -1,0 +1,16 @@
+# One-click deploy on Render (render.com): New → Blueprint → pick this repo.
+# The disk keeps reports and photos across restarts.
+services:
+  - type: web
+    name: civiq
+    runtime: docker
+    plan: starter
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 5
+    envVars:
+      - key: DB_PATH
+        value: /data/kachra.db
+      - key: UPLOADS_DIR
+        value: /data/uploads

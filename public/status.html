@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>System status | CIVIQ</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="page-head"><a href="/" aria-label="CIVIQ home"><img src="/logo.svg" alt="CIVIQ" class="logo"></a><nav><a href="/">Back to the map</a></nav></header>
+  <h1 id="h">System status</h1>
+  <p class="lede" id="sub">Checking…</p>
+  <div class="box" id="rows"></div>
+  <p class="fine">Rechecks every minute. <button class="link" id="again">Check again</button></p>
+</div>
+<script type="module">
+import { $ } from '/common.js';
+const ago = t => { if (!t) return 'never'; const m = Math.round((Date.now() - t) / 6e4); return m < 1 ? 'just now' : m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} days ago`; };
+async function check() {
+  const rows = []; let worst = 0;
+  try {
+    const t0 = performance.now(); const s = await (await fetch('/api/status', { cache: 'no-store' })).json(); const ms = Math.round(performance.now() - t0);
+    const t1 = performance.now(); const okMap = (await fetch('/api/wards', { cache: 'no-store' })).ok; const mapMs = Math.round(performance.now() - t1);
+    rows.push(['Map and reports', okMap ? (mapMs < 1500 ? 0 : 1) : 2, okMap ? `Loading ${mapMs < 1500 ? 'normally' : 'slowly'} (${mapMs} ms)` : 'Not loading']);
+    rows.push(['Photos', s.photos ? 0 : 2, s.photos ? 'Saving normally' : 'Not saving']);
+    rows.push(['New reports', 0, s.lastReport ? `Last report ${ago(s.lastReport)}` : 'No reports yet']);
+    rows.push(['Reviews', s.pendingReviews > 20 ? 1 : 0, `${s.pendingReviews} waiting for review`]);
+    rows.push(['Server', ms < 1500 ? 0 : 1, `Responding in ${ms} ms · version ${s.version} · ${s.wards} wards loaded`]);
+  } catch { rows.push(['Server', 2, "Couldn't check right now"]); }
+  worst = Math.max(...rows.map(r => r[1]));
+  $('#h').textContent = ['Everything is working', 'Some things need attention', 'Something is not working'][worst];
+  $('#sub').textContent = `Checked ${new Date().toLocaleTimeString('en-IN')}`;
+  $('#rows').innerHTML = rows.map(([n, l, txt]) => `<div class="status-row"><span class="dot" style="background:${['var(--ok)', 'var(--amber)', 'var(--red)'][l]}"></span><b>${n}</b><small>${txt}</small></div>`).join('');
+}
+check(); setInterval(check, 60000); $('#again').onclick = check;
+</script>
+</body>
+</html>

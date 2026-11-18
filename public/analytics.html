@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>Gurugram Garbage Data: Live Reports by Ward | CIVIQ</title>
+  <meta name="description" content="Live numbers from citizen garbage reports across Gurugram's 36 wards: what is open, what got cleaned, and how fast.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="page-head"><a href="/" aria-label="CIVIQ home"><img src="/logo.svg" alt="CIVIQ" class="logo"></a>
+    <nav aria-label="Pages"><a href="/">Map</a><a href="/analytics" class="on">Data</a><a href="/wards">Wards</a><a href="/downloads">Open data</a></nav></header>
+  <h1>The data behind Gurugram's garbage crisis.</h1>
+  <p class="lede">Live numbers from citizen reports across all 36 MCG wards. Updated in real time.</p>
+  <p class="live" id="updated"></p>
+
+  <div class="kpis">
+    <div class="kpi"><span>Total reports</span><b id="kTotal">–</b></div>
+    <div class="kpi"><span>Unresolved</span><b id="kOpen" style="color:var(--red)">–</b></div>
+    <div class="kpi"><span>Resolved</span><b id="kRes" style="color:var(--ok)">–</b></div>
+    <div class="kpi"><span title="Resolved reports divided by total reports. A report counts as resolved once a cleanup photo is verified.">Resolution rate ⓘ</span><b id="kRate">–</b></div>
+  </div>
+  <div class="box" id="streak"></div>
+
+  <div class="box chart">
+    <div style="display:flex;align-items:start;gap:10px;flex-wrap:wrap"><div style="flex:1"><h3>Reports over time</h3><p class="sub">Daily reports filed and resolved</p></div>
+      <div class="tabs" id="range"><button class="tab" data-d="7">7d</button><button class="tab on" data-d="30">30d</button><button class="tab" data-d="90">90d</button></div></div>
+    <div id="chart"></div>
+    <div class="legend"><span><i style="background:var(--red)"></i>Reports filed</span><span><i style="background:var(--ok)"></i>Resolved</span></div>
+  </div>
+
+  <div class="box"><h3>How fast does Gurugram clean up?</h3><p class="sub">How quickly resolved reports were cleared.</p><div class="buckets" id="buckets"></div></div>
+  <div class="box hidden" id="fastFix"></div>
+  <div class="box"><h3>Reports by MCG zone</h3><p class="sub">Each zone has its own Joint Commissioner</p><div class="bars" id="byZone"></div></div>
+  <div class="grid2">
+    <div class="box"><h3>Reports by complaint type</h3><p class="sub">What kind of problem was reported</p><div class="bars" id="byComplaint"></div></div>
+    <div class="box"><h3>Reports by waste type</h3><p class="sub">What kind of waste was found</p><div class="bars" id="byWaste"></div></div>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="box"><h3>Wards with the most resolved reports</h3><p class="sub">Credit where it is due</p><div id="mostResolved"></div></div>
+    <div class="box"><h3>Fastest-resolving wards</h3><p class="sub">Median time from report to resolution · minimum 3 resolved reports</p><div id="fastest"></div></div>
+  </div>
+  <div class="box"><h3>Wards with the most unresolved reports</h3><p class="sub">Where the backlog is biggest right now</p><div id="mostOpen"></div></div>
+  <div class="box"><h3>Stale backlog: reports left waiting</h3><p class="sub">Open reports older than 14 days, by ward</p><div id="stale"></div></div>
+  <div class="box"><h3>Repeat hot spots</h3><p class="sub">Spots reported again and again within 50 m. Tap one to open a report there.</p><div class="hot-grid" id="hot"></div></div>
+  <div class="box"><h3>Wards where citizens report the most</h3><p class="sub">Total reports filed, open and resolved</p><div id="mostReported"></div></div>
+  <p class="fine">How these numbers are counted: <a href="/methodology">methodology</a>. Need the raw data? <a href="/downloads">Download data</a>.</p>
+</div>
+<footer class="site"><a href="/">Map</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></footer>
+<script type="module">
+import { $, esc, fmt, api } from '/common.js';
+const L = {
+  fallen_tree: 'Fallen tree or branch', garbage_burning: 'Garbage being burnt', door_to_door: 'Door-to-door collection missed', public_place: 'Garbage in a public place',
+  empty_plot: 'Garbage in an empty plot', cnd_waste: 'Construction & demolition waste', street_cleaning: 'Street not swept / cleaned',
+  household: 'Household waste', construction: 'Construction debris', mixed: 'Mixed waste', ewaste: 'E-waste', biomedical: 'Biomedical', garden: 'Tree & garden waste', firecracker: 'Firecracker waste',
+  unknown: 'Not specified', 'Zone I': 'Zone I', 'Zone II': 'Zone II', 'Zone III': 'Zone III', 'Zone IV': 'Zone IV', 'Zone V': 'Zone V', 'Zone VI': 'Zone VI' };
+const s = await api('/api/stats');
+$('#kTotal').textContent = fmt(s.total); $('#kOpen').textContent = fmt(s.open); $('#kRes').textContent = fmt(s.resolved);
+$('#kRate').innerHTML = `${(s.resolutionRate * 100).toFixed(1)}<small style="font-size:14px">%</small>`;
+$('#updated').textContent = s.firstReport ? `Live · ${fmt(s.total)} reports across ${fmt(s.areasCount)} wards · from ${new Date(s.firstReport).toLocaleDateString('en-IN', { day: 'numeric', month: 'long' })} to today` : 'Live · no reports yet';
+$('#streak').innerHTML = s.streak ? `<h3>🔥 ${s.streak}-day cleanup streak</h3><p class="sub" style="margin:0">At least one report has been resolved every day for ${s.streak} day${s.streak === 1 ? '' : 's'}. Best ever: ${s.bestStreak} days.</p>`
+  : `<h3>No active streak</h3><p class="sub" style="margin:0">${s.bestStreak ? `The all-time best was ${s.bestStreak} consecutive days. ` : ''}One resolution today restarts the chain.</p>`;
+function chart(days) {
+  const d = s.series.slice(-days), max = Math.max(4, ...d.map(x => Math.max(x.filed, x.resolved)));
+  const W = 900, H = 220, P = 28, bw = (W - P) / d.length, y = v => H - 22 - (v / max) * (H - 40);
+  const ticks = [0, .25, .5, .75, 1].map(t => Math.round(t * max)), step = Math.ceil(d.length / 8);
+  $('#chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Daily reports chart">
+    ${ticks.map(t => `<line x1="${P}" x2="${W}" y1="${y(t)}" y2="${y(t)}" stroke="#eee"/><text x="0" y="${y(t) + 4}" font-size="10" fill="#87918c">${t}</text>`).join('')}
+    ${d.map((x, i) => `<rect x="${P + i * bw + 1}" y="${y(x.filed)}" width="${Math.max(1, bw * .55)}" height="${H - 22 - y(x.filed)}" fill="#e5383b" rx="1"><title>${new Date(x.date).toDateString()}: ${x.filed} filed, ${x.resolved} resolved</title></rect>
+      <rect x="${P + i * bw + 1 + bw * .55}" y="${y(x.resolved)}" width="${Math.max(1, bw * .3)}" height="${H - 22 - y(x.resolved)}" fill="#1f9d55" rx="1"/>
+      ${i % step === 0 ? `<text x="${P + i * bw}" y="${H - 6}" font-size="10" fill="#87918c">${new Date(x.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })}</text>` : ''}`).join('')}</svg>`;
+}
+chart(30);
+$('#range').onclick = e => { const b = e.target.closest('.tab'); if (!b) return; document.querySelectorAll('#range .tab').forEach(x => x.classList.toggle('on', x === b)); chart(+b.dataset.d); };
+const resolvedN = s.buckets.reduce((a, b) => a + b.n, 0);
+$('#buckets').innerHTML = s.buckets.map(b => `<div class="bucket"><b>${resolvedN ? (b.n / resolvedN * 100).toFixed(1) : 0}%</b><span>${b.label}</span><small>${b.n} of ${resolvedN}</small></div>`).join('');
+if (s.fastestFix) { const f = s.fastestFix; $('#fastFix').classList.remove('hidden');
+  $('#fastFix').innerHTML = `<h3>This week's fastest fix</h3><p class="sub">${esc(f.landmark || f.locality)}${f.wardNo ? `, Ward ${f.wardNo}` : ''} · cleaned in ${f.hours < 48 ? `${f.hours} hours` : `${Math.round(f.hours / 24)} days`}</p>
+  <a class="ba-row" href="/report/${f.id}"><img src="${esc(f.photo)}" alt="Before"><img src="${esc(f.resolvedPhoto)}" alt="After"></a>`; }
+const bars = (el, rows) => { const max = Math.max(1, ...rows.map(r => r.n));
+  $(el).innerHTML = rows.map(r => `<div class="bar"><span>${esc(L[r.k] || r.k)}</span><div class="track"><div class="fill" style="width:${r.n / max * 100}%"></div></div><span class="n">${fmt(r.n)} · ${(r.n / Math.max(1, s.total) * 100).toFixed(0)}%</span></div>`).join('') || '<p class="empty-note">No data yet.</p>'; };
+bars('#byComplaint', s.byComplaint); bars('#byWaste', s.byWaste); bars('#byZone', s.byZone.filter(x => x.k !== 'unknown'));
+const who = a => [a.councillor, a.zone, a.constituency].filter(Boolean).join(' · ');
+const ranks = (el, rows, value, sub) => $(el).innerHTML = rows.map((a, i) => `<a class="rank" href="${a.wardNo ? `/ward/${a.wardNo}` : '#'}"><span class="no">${i + 1}</span><span class="nm"><b>${esc(a.area)}</b><small>${esc(sub(a))}</small></span><span class="v">${value(a)}</span></a>`).join('') || '<p class="empty-note">Not enough data yet.</p>';
+ranks('#mostOpen', s.mostOpen.filter(a => a.open), a => `<span style="color:var(--red)">${fmt(a.open)}</span>`, a => `${a.open} of ${a.total} unresolved · ${who(a)}`);
+ranks('#mostResolved', s.mostResolved, a => `<span style="color:var(--ok)">${fmt(a.resolved)}</span>`, a => `of ${a.total} · ${(a.resolved / a.total * 100).toFixed(1)}% resolved · ${who(a)}`);
+ranks('#fastest', s.fastest, a => `${(a.medianMs / 864e5).toFixed(1)} days`, a => `median · ${a.resolved} resolved`);
+ranks('#stale', s.stale, a => `<span style="color:var(--red)">${fmt(a.open14)}</span>`, a => `14d+ · ${a.open7} open 7d+ · ${who(a)}`);
+ranks('#mostReported', s.mostReported, a => fmt(a.total), a => `${a.open} unresolved · ${a.resolved} resolved · ${who(a)}`);
+$('#hot').innerHTML = s.hotspots.map(h => `<a href="/report/${h.id}"><div class="thumb" style="background-image:url('${esc(h.photo)}')"></div><span><b>${h.count} reports</b><small>${esc(h.landmark || '')}${h.wardNo ? ` · Ward ${h.wardNo}` : ''} · first ${h.firstDays}d ago</small></span></a>`).join('') || '<p class="empty-note">No repeat spots yet.</p>';
+</script>
+</body>
+</html>

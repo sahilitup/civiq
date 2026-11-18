@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>Contact | CIVIQ</title>
+  <meta name="description" content="Contact the CIVIQ team.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="page-head"><a href="/" aria-label="CIVIQ home"><img src="/logo.svg" alt="CIVIQ" class="logo"></a>
+    <nav aria-label="Pages"><a href="/">Map</a><a href="/analytics">Data</a><a href="/wards">Wards</a><a href="/downloads">Open data</a></nav></header>
+
+  <h1>Contact</h1>
+  <div class="prose">
+  <p id="mail">Loading…</p>
+  <h2>Work at MCG?</h2><p>Ward-level reports and data are available to MCG staff. Reviewers can sign in to the <a href="/admin">review console</a> with a passcode from the CIVIQ team.</p>
+  <h2>To complain about garbage directly</h2><p>Call the MCG citizen helpline <a href="tel:18001801817">1800-180-1817</a>, or report it on the <a href="/">map</a> so it stays visible until it is cleared.</p>
+  </div>
+</div>
+<footer class="site"><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a><a href="/status">Status</a></footer>
+<script type="module">
+import { api } from '/common.js';
+const c = await api('/api/config'); const e = c.officials.contact_email;
+document.getElementById('mail').innerHTML = e ? 'Feedback, bugs, data requests or press: <a href="mailto:' + e + '">' + e + '</a>' : 'A contact email has not been set up yet.';
+</script>
+</body>
+</html>

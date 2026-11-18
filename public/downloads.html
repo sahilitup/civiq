@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>Download Gurugram Garbage Data | CIVIQ</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="page-head"><a href="/" aria-label="CIVIQ home"><img src="/logo.svg" alt="CIVIQ" class="logo"></a>
+    <nav aria-label="Pages"><a href="/">Map</a><a href="/analytics">Data</a><a href="/wards">Wards</a><a href="/downloads" class="on">Open data</a></nav></header>
+  <div id="locked">
+    <h1>Data access is restricted</h1>
+    <p class="lede">Bulk data downloads require an access passcode. Ward and city numbers stay free and public on the <a href="/analytics">analytics page</a>. For access for your own project, <a href="/contact">contact us</a>.</p>
+    <form class="box" id="unlock" style="max-width:420px"><label class="lbl">Passcode<input class="input" type="password" name="passcode" autocomplete="off" required></label>
+      <div class="err-msg" id="err"></div><button class="btn btn-primary btn-block mt">Unlock</button></form>
+  </div>
+  <div id="open" class="hidden">
+    <h1>Download the data</h1>
+    <p class="lede">Every public report. Reporter identities are never included. The link works for one hour.</p>
+    <div class="box dl"><p><b>CSV</b><br>One row per report: date, status, severity, problem, waste type, location, ward, zone, assembly seat, landmark, confirmations.</p><a class="btn btn-red" id="csv">Download CSV</a></div>
+    <div class="box dl"><p><b>GeoJSON</b><br>The same reports as map points, ready for QGIS, Kepler or any web map.</p><a class="btn btn-dark" id="geo">Download GeoJSON</a></div>
+  </div>
+</div>
+<footer class="site"><a href="/">Map</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></footer>
+<script type="module">
+import { $, api } from '/common.js';
+const show = token => { $('#locked').classList.add('hidden'); $('#open').classList.remove('hidden'); $('#csv').href = `/api/export.csv?token=${encodeURIComponent(token)}`; $('#geo').href = `/api/export.geojson?token=${encodeURIComponent(token)}`; };
+$('#unlock').onsubmit = async e => { e.preventDefault(); $('#err').textContent = '';
+  try { const { token } = await api('/api/data/unlock', { method: 'POST', body: { passcode: e.target.passcode.value } }); show(token); } catch (ex) { $('#err').textContent = ex.message; } };
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+  { "version": "2.0.0", "date": "2026-11-18", "new": [
+    "Apna Kachra is now CIVIQ.",
+    "Ward, MLA, MP and zone pages: open reports by size, how long they have waited, a weekly trend, repeat hot spots, and every report as a photo grid you can sort and filter.",
+    "Reporting starts with the camera, then asks how bad it is, the type of waste, the problem and a landmark, one screen at a time, with a final check before you submit.",
+    "Sizes are compared to everyday things, like an auto-rickshaw. Fallen trees get their own descriptions.",
+    "\"Not garbage?\": stand at the spot, photograph what is really there and pick a reason. We review it before the report comes off the map.",
+    "Verifying a cleanup needs you within 100 m with a live photo. Every verification photo carries a strip with the time, ward and location.",
+    "Volunteer communities: find a group cleaning up your ward, or register your own. Listings are reviewed before they go live.",
+    "The whole app is available in Hindi.",
+    "Weekly digest signup, ward leaderboard, city officials, filters by waste type and problem, and search for places, wards and officials."
+  ], "fixed": [
+    "Reports now say \"Seen by N people\" instead of a bare number."
+  ] },
+  { "version": "1.1.0", "date": "2026-11-18", "new": [
+    "36 MCG wards on the map, with the councillor, zone officers and MLA for every spot.",
+    "Your location is detected the moment you take the photo, and the report shows who must clean it."
+  ] },
+  { "version": "1.0.0", "date": "2026-11-18", "new": [
+    "Launch: report garbage with a photo, confirm reports you have seen too, verify cleanups, analytics and open data."
+  ] }
+]

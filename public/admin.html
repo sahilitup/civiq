@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>Review console | CIVIQ</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="page-head"><a href="/" aria-label="CIVIQ home"><img src="/logo.svg" alt="CIVIQ" class="logo"></a><span class="fine" id="who"></span></header>
+  <section id="login">
+    <h1>Review console</h1>
+    <p class="lede">For MCG staff and CIVIQ moderators. Enter your access passcode to continue.</p>
+    <form class="box" id="lf" style="max-width:460px">
+      <label class="lbl">Passcode<input class="input" type="password" name="passcode" autocomplete="off" required></label>
+      <label class="lbl">Your name<input class="input" name="name" required autocomplete="name"><small>Full name as per Aadhaar. This signs every review you approve.</small></label>
+      <label class="lbl">Your role<select class="input" name="role"><option value="supervisor">Supervisor</option><option value="admin">Admin</option></select></label>
+      <label class="lbl">Your zone<select class="input" name="zone"><option value="">All zones</option><option>Zone I</option><option>Zone II</option><option>Zone III</option><option>Zone IV</option><option>Zone V</option><option>Zone VI</option></select></label>
+      <div class="err-msg" id="lerr"></div><button class="btn btn-primary btn-block mt">Enter console</button>
+    </form>
+  </section>
+  <section id="console" class="hidden">
+    <h1>Review console</h1>
+    <div class="tabs" id="tabs"><button class="tab on" data-t="resolutions">Resolutions</button><button class="tab" data-t="disputes">Disputes</button><button class="tab" data-t="communities">Communities</button></div>
+    <p class="fine" id="counts"></p>
+    <div id="list"></div>
+    <div class="row-btns" style="max-width:520px"><button class="btn btn-ghost" id="out">Sign out</button><button class="btn btn-ghost" id="rmEx">Remove all example reports</button></div>
+  </section>
+</div>
+<script type="module">
+import { $, esc, api } from '/common.js';
+let tok = sessionStorage.getItem('civiq_admin'), me = JSON.parse(sessionStorage.getItem('civiq_admin_me') || 'null'), tab = 'resolutions', q = null;
+const auth = () => ({ headers: { Authorization: `Bearer ${tok}` } });
+const reasons = { pothole: 'Pothole or broken road', drainage: 'Drainage or sewage', construction: 'Construction site or materials', streetlight: 'Streetlight or electrical', vehicle: 'Parked vehicle or object', other: 'Something else' };
+const distTxt = d => d <= 100 ? `${d} m from pin` : d <= 250 ? `${d} m from pin, compare photos` : `${d} m from pin, very far`;
+const ago = t => { const h = Math.round((Date.now() - t) / 36e5); return h < 24 ? `${h}h ago` : `${Math.round(h / 24)}d ago`; };
+async function load() {
+  try { q = await api('/api/admin/queue', auth()); } catch (e) { sessionStorage.clear(); tok = null; return showLogin(e.message); }
+  $('#login').classList.add('hidden'); $('#console').classList.remove('hidden');
+  $('#who').textContent = `${me.name} · ${me.role}${me.zone ? ` · ${me.zone}` : ''}`;
+  $('#counts').textContent = `${q.resolutions.length} resolutions pending · ${q.disputes.length} disputes pending${q.subscribers != null ? ` · ${q.communities.length} communities pending · ${q.subscribers} digest subscribers` : ''}`;
+  render();
+}
+function render() {
+  const items = q[tab];
+  if (!items.length) { $('#list').innerHTML = `<div class="box empty-note">No ${tab} pending review.</div>`; return; }
+  $('#list').innerHTML = items.map(x => {
+    if (tab === 'communities') return `<div class="box"><div class="comm-h"><img class="comm-logo" src="${esc(x.logo)}" alt=""><span><b>${esc(x.name)}</b><small>${esc(x.focus)}</small></span></div>
+      <p class="muted sm">${esc(x.about || '')}</p><p class="sm">Area: ${x.allCity ? 'All of Gurugram' : x.wards.map(w => `Ward ${w}`).join(', ')}</p>
+      <p class="sm">Links: ${Object.entries(x.links).map(([k, v]) => `${k}: ${esc(v)}`).join(' · ')}</p><p class="sm">Contact (private): ${esc(x.contactName)} · ${esc(x.contactPhone)}</p>
+      <div class="row-btns"><button class="btn btn-ghost" data-k="community" data-id="${x.id}" data-d="reject">Reject</button><button class="btn btn-primary" data-k="community" data-id="${x.id}" data-d="approve">Approve</button></div></div>`;
+    const r = x.report, dispute = tab === 'disputes';
+    return `<div class="box"><p class="sm"><b>${esc(r.landmark || r.locality)}</b>${r.wardNo ? ` · Ward ${r.wardNo}` : ''} · reported ${ago(r.createdAt)}${dispute ? '' : ` · filed after ${Math.round((x.created_at - r.createdAt) / 864e5)}d`}</p>
+      <div class="queue-item"><figure style="margin:0"><img src="${esc(r.photo)}" alt="Originally reported"><figcaption class="fine">Originally reported</figcaption></figure>
+      <figure style="margin:0"><img src="${esc(x.photo)}" alt="${dispute ? 'Disputed, actually shows' : 'After'}"><figcaption class="fine">${dispute ? `Disputed, actually shows: ${esc(reasons[x.reason])}${x.note ? ` (${esc(x.note)})` : ''}` : 'After'}</figcaption></figure></div>
+      <p class="fine">Submitted ${ago(x.created_at)} · ${distTxt(x.distance_m)}</p>
+      <div class="row-btns">${dispute ? `<button class="btn btn-ghost" data-k="dispute" data-id="${x.id}" data-d="keep">Valid, keep</button><button class="btn btn-red" data-k="dispute" data-id="${x.id}" data-d="remove">Not garbage, remove</button>`
+        : `<button class="btn btn-ghost" data-k="resolution" data-id="${x.id}" data-d="reject">Reject</button><button class="btn btn-green" data-k="resolution" data-id="${x.id}" data-d="approve">Approve</button>`}</div></div>`;
+  }).join('');
+}
+$('#list').onclick = async e => { const b = e.target.closest('[data-k]'); if (!b) return; b.disabled = true;
+  try { await api('/api/admin/review', { method: 'POST', ...auth(), body: { kind: b.dataset.k, id: b.dataset.id, decision: b.dataset.d } }); load(); } catch (ex) { alert(`Review failed. ${ex.message}`); b.disabled = false; } };
+$('#tabs').onclick = e => { const b = e.target.closest('.tab'); if (!b) return; tab = b.dataset.t; document.querySelectorAll('#tabs .tab').forEach(x => x.classList.toggle('on', x === b)); render(); };
+$('#out').onclick = () => { sessionStorage.clear(); location.reload(); };
+$('#rmEx').onclick = async () => {
+  if (!confirm('Remove every example report from the map? Real citizen reports are not affected.')) return;
+  try { const r = await api('/api/admin/remove-examples', { method: 'POST', ...auth(), body: {} }); alert(`Removed ${r.removed} example reports.`); } catch (e) { alert(e.message); }
+};
+function showLogin(msg) { $('#login').classList.remove('hidden'); $('#console').classList.add('hidden'); if (msg) $('#lerr').textContent = msg; }
+$('#lf').onsubmit = async e => { e.preventDefault(); const f = e.target; $('#lerr').textContent = '';
+  try { const out = await api('/api/admin/login', { method: 'POST', body: { passcode: f.passcode.value, name: f.name.value, role: f.role.value, zone: f.zone.value } });
+    tok = out.token; me = out; sessionStorage.setItem('civiq_admin', tok); sessionStorage.setItem('civiq_admin_me', JSON.stringify(out)); load(); }
+  catch (ex) { $('#lerr').textContent = ex.message; } };
+tok ? load() : showLogin();
+</script>
+</body>
+</html>

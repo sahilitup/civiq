@@ -1,0 +1,1353 @@
+{
+ "Nathupur": {
+  "lat": 28.4895112,
+  "lng": 77.0998782,
+  "osm": "Nathupur, Sector 24, Gurugram",
+  "type": "administrative"
+ },
+ "Sikanderpur Ghosi": null,
+ "DLF Phase 3": {
+  "lat": 28.491359,
+  "lng": 77.094639,
+  "osm": "DLF Phase 3-U Block, Sector 24, Gurugram",
+  "type": "residential"
+ },
+ "National Media Centre": {
+  "lat": 28.4997047,
+  "lng": 77.0937936,
+  "osm": "National Media Centre, Sector 25A, Gurugram",
+  "type": "administrative"
+ },
+ "Ambience Island": {
+  "lat": 28.5007796,
+  "lng": 77.102441,
+  "osm": "Ambience Island, Sector 24, Gurugram",
+  "type": "administrative"
+ },
+ "Garden Estate": {
+  "lat": 28.4863213,
+  "lng": 77.10171,
+  "osm": "Garden Estate S Block, Sector 24, Gurugram",
+  "type": "neighbourhood"
+ },
+ "DLF Phase 2": {
+  "lat": 28.483901,
+  "lng": 77.0846097,
+  "osm": "DLF City Phase 2, Sector 25, Gurugram",
+  "type": "administrative"
+ },
+ "DLF Cyber City": {
+  "lat": 28.4973098,
+  "lng": 77.091798,
+  "osm": "Cyber City, Sector 25A, Gurugram",
+  "type": "administrative"
+ },
+ "Heritage City": {
+  "lat": 28.4817226,
+  "lng": 77.0784621,
+  "osm": "Heritage City, Sector 25, Gurugram",
+  "type": "administrative"
+ },
+ "Beverly Park": {
+  "lat": 28.4809276,
+  "lng": 77.0812317,
+  "osm": "Beverly Park 2, Sector 25, Gurugram",
+  "type": "administrative"
+ },
+ "Sirhaul": {
+  "lat": 28.487491,
+  "lng": 77.0709797,
+  "osm": "Sirhaul, Sector 18, Gurugram",
+  "type": "administrative"
+ },
+ "Dundahera": {
+  "lat": 28.5131762,
+  "lng": 77.0780415,
+  "osm": "Dundahera, Sector 20, Gurugram",
+  "type": "administrative"
+ },
+ "Udyog Vihar Phase 1": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Udyog Vihar Phase 2": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Udyog Vihar Phase 3": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Udyog Vihar Phase 4": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Udyog Vihar Phase 5": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Maruti Udyog": {
+  "lat": 28.4961962,
+  "lng": 77.0696526,
+  "osm": "Maruti Udyog, Sector 18, Gurugram",
+  "type": "locality"
+ },
+ "Carterpuri": {
+  "lat": 28.5059995,
+  "lng": 77.0435584,
+  "osm": "Daulat Nasirabad / Carterpuri, Carterpuri Village, Sector 23A",
+  "type": "administrative"
+ },
+ "Nobel Enclave": null,
+ "Palam Vihar Extension": {
+  "lat": 28.5007712,
+  "lng": 77.0398992,
+  "osm": "Palam Vihar Extension, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Mullahera": {
+  "lat": 28.5061284,
+  "lng": 77.0643853,
+  "osm": "Mulahera (OSM locality)",
+  "type": "locality",
+  "via": "overpass"
+ },
+ "Sector 22": {
+  "lat": 28.506318,
+  "lng": 77.0655182,
+  "osm": "Sector 22, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Chippy Enclave": null,
+ "Sector 21": {
+  "lat": 28.5143629,
+  "lng": 77.0730087,
+  "osm": "Sector 21, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 23": {
+  "lat": 28.510319,
+  "lng": 77.0530094,
+  "osm": "Sector 23, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 1": {
+  "lat": 28.5175247,
+  "lng": 77.0425692,
+  "osm": "Sector 1, Gurugram, Haryana",
+  "type": "administrative",
+  "via": "retry"
+ },
+ "Sector 2": {
+  "lat": 28.5090499,
+  "lng": 77.0342831,
+  "osm": "Sector 2, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 3": {
+  "lat": 28.4973905,
+  "lng": 77.020526,
+  "osm": "Sector 3, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Chauma": {
+  "lat": 28.5161021,
+  "lng": 77.0376203,
+  "osm": "Chauma, Sector 1, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 110": {
+  "lat": 28.5069625,
+  "lng": 77.018321,
+  "osm": "Sector 110, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 110A": {
+  "lat": 28.5159108,
+  "lng": 77.0276475,
+  "osm": "Sector 110A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 111": {
+  "lat": 28.5222773,
+  "lng": 77.0336203,
+  "osm": "Sector 111, Bajghera, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 112": {
+  "lat": 28.5203402,
+  "lng": 77.0188612,
+  "osm": "Sector 112, South Dwarka, Bajghera",
+  "type": "administrative"
+ },
+ "Sector 113": {
+  "lat": 28.5286649,
+  "lng": 77.0250282,
+  "osm": "Sector 113, South Dwarka, Bajghera",
+  "type": "administrative"
+ },
+ "Sector 114": {
+  "lat": 28.5318781,
+  "lng": 77.0117794,
+  "osm": "Sector 114, South Dwarka, Bajghera",
+  "type": "administrative"
+ },
+ "Sector 115": {
+  "lat": 28.5356882,
+  "lng": 77.0069431,
+  "osm": "Sector 115, South Dwarka, Bajghera",
+  "type": "administrative"
+ },
+ "New Palam Vihar": {
+  "lat": 28.4868613,
+  "lng": 77.019042,
+  "osm": "New Light Public School, Carterpuri Road, Palam Vihar",
+  "type": "school"
+ },
+ "Nihal Colony": null,
+ "Sarai Alawardi": null,
+ "Bajghera": {
+  "lat": 28.5279082,
+  "lng": 77.0210756,
+  "osm": "Bajghera, South Dwarka, Gurugram",
+  "type": "village"
+ },
+ "Sector 102": {
+  "lat": 28.4754872,
+  "lng": 76.9711747,
+  "osm": "Sector 102, Dhankot, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 102A": {
+  "lat": 28.4830826,
+  "lng": 76.9779064,
+  "osm": "Sector 102A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 103": {
+  "lat": 28.493087,
+  "lng": 76.9866453,
+  "osm": "Sector 103, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 106": {
+  "lat": 28.5060806,
+  "lng": 76.9967796,
+  "osm": "Sector 106, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 107": {
+  "lat": 28.506941,
+  "lng": 76.9752137,
+  "osm": "Sector 107, Dharampur, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 108": {
+  "lat": 28.5128994,
+  "lng": 76.9823615,
+  "osm": "Sector 108, Dharampur, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 109": {
+  "lat": 28.5109205,
+  "lng": 77.0065956,
+  "osm": "Sector 109, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Daulatabad": null,
+ "Pawala Khusrupur": null,
+ "Kherki Majra": null,
+ "Dhankot": {
+  "lat": 28.4741331,
+  "lng": 76.9571207,
+  "osm": "Dhankot, Gurugram, Haryana",
+  "type": "village"
+ },
+ "Mohammad Heri": null,
+ "Babupur": null,
+ "Dharampur": {
+  "lat": 28.5126504,
+  "lng": 76.9787853,
+  "osm": "Dharampur, Gurugram, Haryana",
+  "type": "village"
+ },
+ "Surat Nagar Phase 2": {
+  "lat": 28.4835461,
+  "lng": 77.0023716,
+  "osm": "Surat Nagar Phase 1, Sector 104, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Ram Vihar": {
+  "lat": 28.5710412,
+  "lng": 77.174149,
+  "osm": "Som Vihar, Ramakrishna Puram, South",
+  "type": "residential",
+  "via": "retry"
+ },
+ "Dhanwapur": {
+  "lat": 28.483494,
+  "lng": 76.9986379,
+  "osm": "Dhanwapur Road, Sector 104, Gurugram",
+  "type": "residential"
+ },
+ "Basai": {
+  "lat": 28.4620265,
+  "lng": 76.9896458,
+  "osm": "Basai Jhod Lake, Sector 9B, Gurugram",
+  "type": "pond"
+ },
+ "Gadoli Khurd": null,
+ "Gadoli Kalan": null,
+ "Sector 9B": {
+  "lat": 28.4563803,
+  "lng": 76.981012,
+  "osm": "Sector 9B, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 37B": {
+  "lat": 28.4333189,
+  "lng": 76.9813419,
+  "osm": "Sector 37B, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 37D": {
+  "lat": 28.4480039,
+  "lng": 76.9697682,
+  "osm": "Sector 37D, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 100": {
+  "lat": 28.4613898,
+  "lng": 76.9712708,
+  "osm": "Sector 100, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 101": {
+  "lat": 28.4684077,
+  "lng": 76.9803787,
+  "osm": "Sector 101, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 104": {
+  "lat": 28.4795324,
+  "lng": 76.9937197,
+  "osm": "Sector 104, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 9": {
+  "lat": 28.4621791,
+  "lng": 77.0000718,
+  "osm": "Sector 9, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 9A": {
+  "lat": 28.4690266,
+  "lng": 76.9962811,
+  "osm": "Sector 9A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Bhawani Enclave": null,
+ "Ambedkar Nagar": null,
+ "Devilal Colony": null,
+ "Ravi Nagar": null,
+ "Vishwakarma Colony": null,
+ "Krishna Nagar": null,
+ "Sector 10": {
+  "lat": 28.4445813,
+  "lng": 77.0060231,
+  "osm": "Sector 10, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Basai Enclave": null,
+ "Kadipur Industrial Area": null,
+ "Saraswati Enclave": null,
+ "Pace City 2": {
+  "lat": 28.439708,
+  "lng": 77.0109288,
+  "osm": "Pace City I, Sector 10, Gurugram",
+  "type": "administrative"
+ },
+ "Udyog Vihar Phase 6": {
+  "lat": 28.4971745,
+  "lng": 77.0813511,
+  "osm": "Udyog Vihar Phase 4, Sector 18, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Sector 37C": {
+  "lat": 28.4489095,
+  "lng": 76.9880502,
+  "osm": "Sector 37C, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Khandsa": {
+  "lat": 28.4533282,
+  "lng": 77.0195396,
+  "osm": "Atal Vatika Park, 4 marla ,khandsa road",
+  "type": "park"
+ },
+ "Kadipur": null,
+ "Shaktipur": null,
+ "Hari Nagar": null,
+ "Pace City 1": {
+  "lat": 28.439708,
+  "lng": 77.0109288,
+  "osm": "Pace City I, Sector 10, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 10A": {
+  "lat": 28.4445813,
+  "lng": 77.0060231,
+  "osm": "Sector 10, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Khandsa Road Industrial Area": null,
+ "Hans Enclave": {
+  "lat": 28.4453686,
+  "lng": 77.0257583,
+  "osm": "Hans Enclave, Sector 33, Gurugram",
+  "type": "suburb"
+ },
+ "Naharpur Rupa": {
+  "lat": 28.445846,
+  "lng": 77.0209819,
+  "osm": "Naharpur Rupa, Sector 33, Gurugram",
+  "type": "suburb"
+ },
+ "Nitin Vihar": {
+  "lat": 28.4405988,
+  "lng": 77.0164667,
+  "osm": "Nitin Vihar Road, Naharpur Rupa, Sector 33",
+  "type": "residential"
+ },
+ "Shiv Colony": {
+  "lat": 28.3603559,
+  "lng": 77.0646624,
+  "osm": "शिवा कॉलोनी, Bhondsi, Sohna",
+  "type": "residential"
+ },
+ "Teekli": {
+  "lat": 28.3560384,
+  "lng": 77.0289751,
+  "osm": "Teekli (OSM village)",
+  "type": "village",
+  "via": "overpass"
+ },
+ "Malibu Town": {
+  "lat": 28.4234344,
+  "lng": 77.0468649,
+  "osm": "Malibu Town, Sector 47, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 47": {
+  "lat": 28.4251572,
+  "lng": 77.0475128,
+  "osm": "Sector 47, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 33": {
+  "lat": 28.4384785,
+  "lng": 77.0251655,
+  "osm": "Sector 33, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Jharsa": {
+  "lat": 28.4445323,
+  "lng": 77.0491372,
+  "osm": "Jharsa, Sector 39, Gurugram",
+  "type": "locality"
+ },
+ "Mohyal Colony": {
+  "lat": 28.4485142,
+  "lng": 77.0529663,
+  "osm": "Mohyal Colony, Sector 40, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Greenwood City": {
+  "lat": 28.4449095,
+  "lng": 77.0611408,
+  "osm": "Greenwood City, Sector 45, Gurugram",
+  "type": "administrative"
+ },
+ "Medicity": {
+  "lat": 28.4389467,
+  "lng": 77.0402727,
+  "osm": "Medanta The Medicity, HUDA, Sector 38",
+  "type": "hospital"
+ },
+ "Sector 38": {
+  "lat": 28.4351423,
+  "lng": 77.0403538,
+  "osm": "Sector 38, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 39": {
+  "lat": 28.4423675,
+  "lng": 77.0504724,
+  "osm": "Sector 39, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Islampur": {
+  "lat": 28.4334464,
+  "lng": 77.0370117,
+  "osm": "Islampur, Sector 38, Gurugram",
+  "type": "administrative"
+ },
+ "South City 1": {
+  "lat": 28.4188433,
+  "lng": 77.0440293,
+  "osm": "1, Sector 47, Gurugram",
+  "type": "residential"
+ },
+ "Sector 15 Part 1": {
+  "lat": 28.3843199,
+  "lng": 76.9122326,
+  "osm": "Sector 15, Manesar, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 15 Part 2": {
+  "lat": 28.4534919,
+  "lng": 77.0411056,
+  "osm": "Park View Apartments, Sector 15 Part 2, Shaheed Major Vikas Yadav Marg",
+  "type": "residential"
+ },
+ "Kirti Nagar": null,
+ "Sector 31": {
+  "lat": 28.4540044,
+  "lng": 77.0497179,
+  "osm": "Sector 31, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 40": {
+  "lat": 28.4500427,
+  "lng": 77.0577093,
+  "osm": "Sector 40, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Prem Puri": null,
+ "Jal Vihar": {
+  "lat": 28.4367759,
+  "lng": 77.0548427,
+  "osm": "Jal Vihar Mkt, Sector 46, Gurugram",
+  "type": "residential"
+ },
+ "Sector 46": {
+  "lat": 28.4359133,
+  "lng": 77.0584045,
+  "osm": "Sector 46, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Indira Colony": {
+  "lat": 28.4385959,
+  "lng": 77.0705825,
+  "osm": "Indira Colony, Sector 52, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Sector 51": {
+  "lat": 28.4287011,
+  "lng": 77.0666877,
+  "osm": "Sector 51, Samaspur, Gurugram",
+  "type": "administrative"
+ },
+ "Mayfield Garden": {
+  "lat": 28.42749,
+  "lng": 77.0608897,
+  "osm": "Mayfield Garden, Sector 51, Samaspur",
+  "type": "administrative"
+ },
+ "Sushant Lok 3": {
+  "lat": 28.4545693,
+  "lng": 77.0826249,
+  "osm": "C Block, Sushant Lok Phase 1, C Block Sushant Lok 1",
+  "type": "administrative",
+  "via": "retry"
+ },
+ "Tigra": {
+  "lat": 28.4345028,
+  "lng": 77.0582185,
+  "osm": "Samaspur Tigra Road, Sector 46, Samaspur",
+  "type": "residential"
+ },
+ "Sector 50": {
+  "lat": 28.4166536,
+  "lng": 77.0611745,
+  "osm": "Sector 50, Samaspur, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 57": {
+  "lat": 28.4232478,
+  "lng": 77.0804487,
+  "osm": "Sector 57, Samaspur, Gurugram",
+  "type": "administrative"
+ },
+ "South City 2": {
+  "lat": 28.4188806,
+  "lng": 77.0439211,
+  "osm": "2, Sector 47, Gurugram",
+  "type": "residential"
+ },
+ "Sector 49": {
+  "lat": 28.4128851,
+  "lng": 77.0498362,
+  "osm": "Sector 49, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Nirvana Country": {
+  "lat": 28.4150509,
+  "lng": 77.0642955,
+  "osm": "Nirvana Country, Sector 50, Samaspur",
+  "type": "administrative"
+ },
+ "Rosewood City": {
+  "lat": 28.4102341,
+  "lng": 77.0544854,
+  "osm": "Rosewood City, Sector 49, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 65": {
+  "lat": 28.4030162,
+  "lng": 77.0695893,
+  "osm": "Sector 65, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 66": {
+  "lat": 28.3974292,
+  "lng": 77.0538823,
+  "osm": "Sector 66, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Nangli Umarpur": null,
+ "Maidawas": {
+  "lat": 28.3995904,
+  "lng": 77.0817518,
+  "osm": "Maidawas Road, Sector 64, Gurugram",
+  "type": "tertiary"
+ },
+ "Ghasola": null,
+ "Fazilpur Jharsa": null,
+ "Sector 71": {
+  "lat": 28.4064564,
+  "lng": 77.0233125,
+  "osm": "Sector 71, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 73": {
+  "lat": 28.4088081,
+  "lng": 77.0161691,
+  "osm": "Sector 73, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 74": {
+  "lat": 28.4110081,
+  "lng": 77.0101209,
+  "osm": "Sector 74, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 34": {
+  "lat": 28.4280033,
+  "lng": 77.0115678,
+  "osm": "Sector 34, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 72A": {
+  "lat": 28.4233234,
+  "lng": 77.0187775,
+  "osm": "Sector 72A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Behrampur": {
+  "lat": 28.4065273,
+  "lng": 77.1104133,
+  "osm": "Behrampur, Sector 59, Sector 60",
+  "type": "administrative"
+ },
+ "Uppal Southend": {
+  "lat": 28.4102729,
+  "lng": 77.0465154,
+  "osm": "Uppal SouthEnd, Sector 49, Gurugram",
+  "type": "administrative"
+ },
+ "Mohammadpur Jharsa": null,
+ "Narsinghpur": null,
+ "Begampur Khatola": null,
+ "Sector 74A": {
+  "lat": 28.4108506,
+  "lng": 76.9991194,
+  "osm": "Sector 74A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 75A": {
+  "lat": 28.4004545,
+  "lng": 76.9944537,
+  "osm": "Sector 75A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 75": {
+  "lat": 28.3964476,
+  "lng": 77.0065896,
+  "osm": "Sector 75, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Kherki Daula": null,
+ "Sihi": {
+  "lat": 28.4115475,
+  "lng": 76.971029,
+  "osm": "Sihi, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Darbaripur": {
+  "lat": 28.3932504,
+  "lng": 77.0100058,
+  "osm": "Darbari Pur (OSM locality)",
+  "type": "locality",
+  "via": "overpass"
+ },
+ "Palra": {
+  "lat": 28.3775134,
+  "lng": 77.0217214,
+  "osm": "Palra, Gurugram, Haryana",
+  "type": "village"
+ },
+ "Badshahpur": {
+  "lat": 28.3932757,
+  "lng": 77.0484201,
+  "osm": "Badshahpur, Gurugram, Haryana",
+  "type": "locality"
+ },
+ "Sector 67": {
+  "lat": 28.3864052,
+  "lng": 77.0598046,
+  "osm": "Sector 67, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 68": {
+  "lat": 28.388897,
+  "lng": 77.0459859,
+  "osm": "Sector 68, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 69": {
+  "lat": 28.3960701,
+  "lng": 77.0372311,
+  "osm": "Sector 69, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 70": {
+  "lat": 28.3947261,
+  "lng": 77.0223138,
+  "osm": "Sector 70, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Ramgarh": {
+  "lat": 28.3940897,
+  "lng": 77.0658684,
+  "osm": "Samrat Mihir Bhoj Gurjar sector 67 Road towards Ramgarh, Sector 67, Gurugram",
+  "type": "secondary"
+ },
+ "Nurpur": null,
+ "Bhondsi": {
+  "lat": 28.3504798,
+  "lng": 77.0618737,
+  "osm": "Bhondsi, Gurugram, Haryana",
+  "type": "village",
+  "via": "retry"
+ },
+ "Mohan Nagar": null,
+ "Vatika Kunj": null,
+ "Defence Colony": null,
+ "Naya Gaon": {
+  "lat": 28.366831,
+  "lng": 77.0837943,
+  "osm": "Naya Gaon, Gurugram, Haryana",
+  "type": "village"
+ },
+ "Shri Ram Colony": {
+  "lat": 28.3621767,
+  "lng": 77.0668565,
+  "osm": "Shri Ram Colony Rd., Naya Gaon, Sohna",
+  "type": "residential"
+ },
+ "Shyam Kunj": {
+  "lat": 28.3610143,
+  "lng": 77.075964,
+  "osm": "Shyam Kunj Hospital, Maruti Kunj Road, Maruti Kunj",
+  "type": "hospital"
+ },
+ "Ekta Enclave": null,
+ "Kadarpur": {
+  "lat": 28.3918989,
+  "lng": 77.0609767,
+  "osm": "Kadarpur Road, Sector 67, Gurugram",
+  "type": "tertiary"
+ },
+ "Ullawas": {
+  "lat": 28.4066079,
+  "lng": 77.0946186,
+  "osm": "Ullawas, Sohna, Gurugram",
+  "type": "administrative"
+ },
+ "Bhandwari": {
+  "lat": 28.4013263,
+  "lng": 77.1505566,
+  "osm": "Bhandwari (OSM village)",
+  "type": "village",
+  "via": "overpass"
+ },
+ "Balola": null,
+ "Gwal Pahari": {
+  "lat": 28.4326344,
+  "lng": 77.1480585,
+  "osm": "Gwal Pahari, Sohna, Gurugram",
+  "type": "residential"
+ },
+ "Ghata": {
+  "lat": 28.4207139,
+  "lng": 77.1100936,
+  "osm": "Ghatta (OSM locality)",
+  "type": "locality",
+  "via": "overpass"
+ },
+ "Sector 58": {
+  "lat": 28.4160012,
+  "lng": 77.1085564,
+  "osm": "Sector 58, Sohna, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 61": {
+  "lat": 28.4110188,
+  "lng": 77.0963685,
+  "osm": "Sector 61, Ireo City, Sohna",
+  "type": "suburb"
+ },
+ "Sector 62": {
+  "lat": 28.407697,
+  "lng": 77.0823781,
+  "osm": "Sector 62, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 55": {
+  "lat": 28.4274166,
+  "lng": 77.1097538,
+  "osm": "Sector 55, Sohna, Gurugram",
+  "type": "administrative"
+ },
+ "Wazirabad": {
+  "lat": 28.433762,
+  "lng": 77.0877572,
+  "osm": "Wazirabad, Sector 52, Gurugram",
+  "type": "locality"
+ },
+ "Ardee City": {
+  "lat": 28.4410412,
+  "lng": 77.0792079,
+  "osm": "Ardee City, Sector 52, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 52": {
+  "lat": 28.4368166,
+  "lng": 77.0795276,
+  "osm": "Sector 52, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sushant Lok 2": {
+  "lat": 28.4227953,
+  "lng": 77.0868304,
+  "osm": "Sushant Lok 2, Sushant Lok III, Sector 57",
+  "type": "neighbourhood"
+ },
+ "Sector 53": {
+  "lat": 28.4415191,
+  "lng": 77.096805,
+  "osm": "Sector 53, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 56": {
+  "lat": 28.4253232,
+  "lng": 77.0985157,
+  "osm": "Sector 56, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 52A": {
+  "lat": 28.4396186,
+  "lng": 77.0905891,
+  "osm": "Sector 52A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 54": {
+  "lat": 28.4421059,
+  "lng": 77.1112654,
+  "osm": "Sector 54, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Suncity": {
+  "lat": 28.4355436,
+  "lng": 77.1376116,
+  "osm": "Suncity Vatsal Valley, Sohna, Gurugram",
+  "type": "residential"
+ },
+ "Sushant Lok 1": {
+  "lat": 28.4545693,
+  "lng": 77.0826249,
+  "osm": "C Block, Sushant Lok Phase 1, C Block Sushant Lok 1",
+  "type": "administrative"
+ },
+ "DLF Phase 4": {
+  "lat": 28.4640865,
+  "lng": 77.0836441,
+  "osm": "DLF City Phase 4, IFFCO Chowk, Sector 27",
+  "type": "administrative"
+ },
+ "Sector 43": {
+  "lat": 28.4548735,
+  "lng": 77.0858864,
+  "osm": "Sector 43, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 42": {
+  "lat": 28.4558973,
+  "lng": 77.1084759,
+  "osm": "Sector 42, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 27": {
+  "lat": 28.4646566,
+  "lng": 77.0839505,
+  "osm": "Sector 27, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "DLF Phase 5": {
+  "lat": 28.4471643,
+  "lng": 77.0937399,
+  "osm": "DLF 5 (OSM neighbourhood)",
+  "type": "neighbourhood",
+  "via": "overpass"
+ },
+ "Saraswati Vihar": {
+  "lat": 28.4772236,
+  "lng": 77.0832762,
+  "osm": "Saraswati Vihar, Sector 28, Gurugram",
+  "type": "administrative"
+ },
+ "Maruti Kunj": {
+  "lat": 28.3611406,
+  "lng": 77.0747669,
+  "osm": "Maruti Kunj Road, Maruti Kunj, Naya Gaon",
+  "type": "residential"
+ },
+ "Chakkarpur": {
+  "lat": 28.47223,
+  "lng": 77.0859408,
+  "osm": "Chakarpur (OSM locality)",
+  "type": "locality",
+  "via": "overpass"
+ },
+ "DLF Phase 1": {
+  "lat": 28.4765171,
+  "lng": 77.090194,
+  "osm": "DLF Phase 1, Sector 28, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Sector 28": {
+  "lat": 28.4741302,
+  "lng": 77.0825722,
+  "osm": "Sector 28, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Maruti Vihar": {
+  "lat": 28.4762116,
+  "lng": 77.0809316,
+  "osm": "Maruti Vihar Exit Gate Road, Sector 28, Gurugram",
+  "type": "residential"
+ },
+ "Sector 44": {
+  "lat": 28.4507064,
+  "lng": 77.0738281,
+  "osm": "Sector 44, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 45": {
+  "lat": 28.4449004,
+  "lng": 77.0663545,
+  "osm": "Sector 45, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Kanhai": null,
+ "Sector 29": {
+  "lat": 28.4669197,
+  "lng": 77.0671306,
+  "osm": "Sector 29, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Saini Khera": null,
+ "Silokhera": {
+  "lat": 28.4631924,
+  "lng": 77.0560102,
+  "osm": "Silokhera SEZ, Sector 30, Gurugram",
+  "type": "commercial"
+ },
+ "Moti Vihar": {
+  "lat": 28.458843,
+  "lng": 77.0614848,
+  "osm": "GoMechanic (H.Q.), Landmark Tower, Moti Vihar",
+  "type": "yes"
+ },
+ "Sector 30": {
+  "lat": 28.4618719,
+  "lng": 77.05688,
+  "osm": "Sector 30, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Vijay Vihar": {
+  "lat": 28.4541973,
+  "lng": 77.0420819,
+  "osm": "Vijay Rattan Vihar, Sector 15 Part 2, Entry 13",
+  "type": "residential"
+ },
+ "Jal Vayu Vihar": {
+  "lat": 28.4585123,
+  "lng": 77.0523974,
+  "osm": "Jalvayu Vihar (OSM residential)",
+  "type": "residential",
+  "via": "overpass"
+ },
+ "Sector 14": {
+  "lat": 28.473784,
+  "lng": 77.0471827,
+  "osm": "Sector 14, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 16": {
+  "lat": 28.4687344,
+  "lng": 77.0511794,
+  "osm": "Sector 16, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sector 17": {
+  "lat": 28.4758035,
+  "lng": 77.0607773,
+  "osm": "Sector 17, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sukhrali": {
+  "lat": 28.4761516,
+  "lng": 77.0609543,
+  "osm": "Sukhrali, Sector 17, Gurugram",
+  "type": "administrative"
+ },
+ "Air Force Station Gurgaon": {
+  "lat": 28.4374697,
+  "lng": 77.0266311,
+  "osm": "Air Force Station Sohna Road, Sector 33, Gurugram",
+  "type": "military"
+ },
+ "Management Development Institute": {
+  "lat": 28.4721104,
+  "lng": 77.0589893,
+  "osm": "Management Development Institute, Mehrauli-Gurgaon Road Flyover, Sector 14",
+  "type": "college"
+ },
+ "Canal Colony": null,
+ "Old DLF Colony": {
+  "lat": 28.4701448,
+  "lng": 77.0441185,
+  "osm": "Old DLF Colony, Shivaji Nagar, Sector 14",
+  "type": "neighbourhood"
+ },
+ "Chander Nagar": {
+  "lat": 28.4662946,
+  "lng": 77.0473001,
+  "osm": "Chander Nagar, Sector 15-II, Gurugram",
+  "type": "locality"
+ },
+ "Anamika Enclave": {
+  "lat": 28.4669502,
+  "lng": 77.0418294,
+  "osm": "Government Girls College, Mehrauli-Gurgaon Road, Mehrauli-Gurgaon Road",
+  "type": "bus_stop"
+ },
+ "Police Lines": null,
+ "Prem Nagar": {
+  "lat": 28.4673653,
+  "lng": 77.0352374,
+  "osm": "Prem Nagar, Sector 12A, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Sanjay Gram": {
+  "lat": 28.4781849,
+  "lng": 77.0419244,
+  "osm": "Sanjay Gram Colony, Sector 13, Gurugram",
+  "type": "residential"
+ },
+ "Rajiv Nagar": {
+  "lat": 28.47748,
+  "lng": 77.037207,
+  "osm": "PHC Rajiv Nagar, Gali Number 8, Sector 13",
+  "type": "centre"
+ },
+ "Rajiv Nagar West": null,
+ "Acharya Puri": {
+  "lat": 28.466138,
+  "lng": 77.0071563,
+  "osm": "Acharya Puri Road, Sector 7, Gurugram",
+  "type": "residential"
+ },
+ "Sector 12A": {
+  "lat": 28.4701041,
+  "lng": 77.0315426,
+  "osm": "Sector 12A, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Sheetla Colony": {
+  "lat": 28.484711,
+  "lng": 77.0273173,
+  "osm": "Sheetla Colony-Block - E, Ashok Vihar Phase III Extension, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Civil Lines": {
+  "lat": 28.4616851,
+  "lng": 77.0339023,
+  "osm": "Civil Lines, Shivaji Nagar, Sector 11A",
+  "type": "residential"
+ },
+ "Friends Colony": {
+  "lat": 28.4548205,
+  "lng": 77.0362802,
+  "osm": "Friends Colony, Shivaji Nagar, Sector 11A",
+  "type": "neighbourhood"
+ },
+ "Baraf Khana": null,
+ "Roshan Pura": null,
+ "Gopal Nagar": null,
+ "Adarsh Nagar": {
+  "lat": 28.4643329,
+  "lng": 77.0315654,
+  "osm": "Adarsh Nagar, Sector 12A, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Indira Puri": null,
+ "Jacubpura": null,
+ "Patel Nagar": {
+  "lat": 28.4657746,
+  "lng": 77.0391986,
+  "osm": "Patel Nagar, Mehrauli-Gurgaon Road, Shivaji Nagar",
+  "type": "bus_stop"
+ },
+ "Mini Secretariat": {
+  "lat": 28.4488681,
+  "lng": 77.0289929,
+  "osm": "Mini Secretariat, Delhi-Gurugram Expressway, Om Nagar",
+  "type": "government"
+ },
+ "Rajiv Colony": null,
+ "Shanti Nagar": null,
+ "Om Nagar": {
+  "lat": 28.4500334,
+  "lng": 77.0211592,
+  "osm": "Om Nagar, Sector 11, Gurugram",
+  "type": "suburb"
+ },
+ "Raj Nagar": {
+  "lat": 28.4480285,
+  "lng": 77.0180396,
+  "osm": "Raj Nagar, Sector 11, Gurugram",
+  "type": "suburb"
+ },
+ "Anaj Mandi": null,
+ "Shivaji Park": null,
+ "Gandhi Nagar": {
+  "lat": 28.4531749,
+  "lng": 77.0153287,
+  "osm": "Gandhi Nagar, Sector 8, Gurugram",
+  "type": "locality"
+ },
+ "Shiv Nagar": {
+  "lat": 28.4560758,
+  "lng": 77.0345749,
+  "osm": "Shiv Mandir Road, HVPNL Colony, Shivaji Nagar",
+  "type": "residential"
+ },
+ "Heera Nagar": null,
+ "Nai Abadi": null,
+ "Veer Nagar": null,
+ "Manohar Nagar": null,
+ "Baldev Nagar": {
+  "lat": 28.4609273,
+  "lng": 77.0133402,
+  "osm": "Baldev Nagar Road, Sector 7, Gurugram",
+  "type": "residential"
+ },
+ "Feroz Gandhi Colony": null,
+ "Auto Market": null,
+ "Amar Colony": null,
+ "Shakti Nagar": {
+  "lat": 28.4532911,
+  "lng": 77.017516,
+  "osm": "Children park, 4/8, Shakti nagar road",
+  "type": "park"
+ },
+ "Laxmi Nagar": {
+  "lat": 28.4532911,
+  "lng": 77.017516,
+  "osm": "Children park, 4/8, Shakti nagar road",
+  "type": "park"
+ },
+ "Aath Marla": null,
+ "Shivaji Nagar": {
+  "lat": 28.4552808,
+  "lng": 77.0237905,
+  "osm": "Shivaji Nagar, Sector 11, Gurugram",
+  "type": "suburb"
+ },
+ "Ram Nagar": {
+  "lat": 28.4581945,
+  "lng": 77.0231004,
+  "osm": "Ram Nagar Road, Sector 7, Sector 8",
+  "type": "residential"
+ },
+ "Arjun Nagar": null,
+ "Vijay Park": null,
+ "Nehru Lane": null,
+ "Madanpuri": {
+  "lat": 28.4620844,
+  "lng": 77.0185498,
+  "osm": "Madanpuri Road, Sector 7, Sector 8",
+  "type": "tertiary"
+ },
+ "Jyoti Park": null,
+ "Dayanand Colony": {
+  "lat": 28.4728756,
+  "lng": 77.0220042,
+  "osm": "Dayanand Colony, Sector 6, Gurugram",
+  "type": "residential"
+ },
+ "Ashok Puri": null,
+ "Mahavir Pura": null,
+ "Sanjay Colony": {
+  "lat": 28.4781849,
+  "lng": 77.0419244,
+  "osm": "Sanjay Gram Colony, Sector 13, Gurugram",
+  "type": "residential"
+ },
+ "Mianwali Colony": {
+  "lat": 28.4670683,
+  "lng": 77.0289685,
+  "osm": "Mianwali Colony, Sector 12A, Gurugram",
+  "type": "residential"
+ },
+ "Lajpat Nagar": null,
+ "Subhash Nagar": null,
+ "Jawahar Nagar": null,
+ "Prem Nagar 1": {
+  "lat": 28.4673653,
+  "lng": 77.0352374,
+  "osm": "Prem Nagar, Sector 12A, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Nai Basti": null,
+ "Pratap Nagar": null,
+ "Rattan Garden": null,
+ "Bhim Garden": null,
+ "Sector 7": {
+  "lat": 28.4662572,
+  "lng": 77.0142654,
+  "osm": "Sector 7, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Shivpuri": null,
+ "New Colony": {
+  "lat": 28.4662572,
+  "lng": 77.0142654,
+  "osm": "Sector 7, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Krishna Colony": null,
+ "Sector 7 Extension": {
+  "lat": 28.4967161,
+  "lng": 77.0274408,
+  "osm": "Ashok Vihar Phase III Extension, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Housing Board Colony": {
+  "lat": 28.4487068,
+  "lng": 77.0477845,
+  "osm": "Housing Board Colony, Sector 31, Gurugram",
+  "type": "residential"
+ },
+ "Surya Vihar": null,
+ "Laxman Vihar Phase 1": null,
+ "Laxman Vihar Phase 2": null,
+ "Cancon Enclave": null,
+ "Sector 4": {
+  "lat": 28.4750063,
+  "lng": 77.0103535,
+  "osm": "Sector 4, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Rajendra Park": {
+  "lat": 28.5071651,
+  "lng": 77.0232548,
+  "osm": "Rajendra Park Road, Sector 110, Gurugram",
+  "type": "tertiary"
+ },
+ "Daulatabad Industrial Area": null,
+ "Surat Nagar Phase 1": {
+  "lat": 28.4835461,
+  "lng": 77.0023716,
+  "osm": "Surat Nagar Phase 1, Sector 104, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Tek Chand Nagar": null,
+ "Bhim Garh Kheri": null,
+ "Ashok Vihar": {
+  "lat": 28.4967161,
+  "lng": 77.0274408,
+  "osm": "Ashok Vihar Phase III Extension, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Ashok Vihar Phase 2": {
+  "lat": 28.4967161,
+  "lng": 77.0274408,
+  "osm": "Ashok Vihar Phase III Extension, Gurugram, Haryana",
+  "type": "suburb"
+ },
+ "Sector 5": {
+  "lat": 28.3673538,
+  "lng": 76.9267238,
+  "osm": "Sector 5, Manesar, Gurugram",
+  "type": "administrative"
+ },
+ "Sector 6": {
+  "lat": 28.4753259,
+  "lng": 77.0258279,
+  "osm": "Sector 6, Gurugram, Haryana",
+  "type": "administrative"
+ },
+ "Apna Enclave": {
+  "lat": 28.4849095,
+  "lng": 77.0134529,
+  "osm": "Apna Enclave, Sector 3, Gurugram",
+  "type": "residential"
+ },
+ "Ashok Vihar Phase 3": {
+  "lat": 28.495084,
+  "lng": 77.0248389,
+  "osm": "Ashok Vihar Phase 3 Block J, Ashok Vihar Phase III Extension, Gurugram",
+  "type": "neighbourhood"
+ },
+ "Gurgaon Village": {
+  "lat": 28.3967469,
+  "lng": 77.0448013,
+  "osm": "Akropolis Super Speciality Hospital, Near Vatika Chowk, Opposite Chinar Garden",
+  "type": "hospital"
+ },
+ "Amanpura": null
+}

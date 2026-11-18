@@ -1,0 +1,10 @@
+data/*.db*
+data/secrets.local.json
+uploads/
+node_modules/
+tools/node_modules/
+.bin/
+video/tmp/
+video/*-1080p.mp4
+tools/tunnel.log
+*.log

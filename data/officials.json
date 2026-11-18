@@ -1,0 +1,69 @@
+{
+  "_note": "Verify every name and number against mcg.gov.in before going live. Last compiled Nov 2026 from public sources; officers get transferred often.",
+  "city": "Gurugram",
+  "corporation": "Municipal Corporation of Gurugram (MCG)",
+  "x_handle": "MCGurugram",
+  "follow": {
+    "x": "",
+    "instagram": "",
+    "telegram": ""
+  },
+  "contact_email": "",
+  "mayor": {
+    "name": "Raj Rani Malhotra",
+    "party": "BJP",
+    "email": "mayor@mcg.gov.in",
+    "photo": "/people/mayor-raj-rani-malhotra.jpg",
+    "photoCredit": "Municipal Corporation of Gurugram (mcg.gov.in)"
+  },
+  "commissioner": {
+    "name": "Dr. Pankaj, IAS",
+    "phone": "01242370911",
+    "photo": "/people/commissioner-pankaj.jpg",
+    "photoCredit": "Municipal Corporation of Gurugram (mcg.gov.in)"
+  },
+  "mp": {
+    "name": "Rao Inderjit Singh",
+    "party": "BJP",
+    "seat": "Gurgaon",
+    "photo": "/people/mp-rao-inderjit-singh.jpg",
+    "photoCredit": "Planning Commission, via Wikimedia Commons, GODL-India"
+  },
+  "mlas": {
+    "Gurgaon": {
+      "name": "Mukesh Sharma",
+      "party": "BJP",
+      "photo": "/people/mla-mukesh-sharma.jpg",
+      "photoCredit": "PRS Legislative Research (prsindia.org), CC BY 4.0"
+    },
+    "Badshahpur": {
+      "name": "Rao Narbir Singh",
+      "party": "BJP",
+      "photo": "/people/mla-rao-narbir-singh.jpg",
+      "photoCredit": "PRS Legislative Research (prsindia.org), CC BY 4.0"
+    },
+    "Sohna": {
+      "name": "Tejpal Tanwar",
+      "party": "BJP",
+      "photo": "/people/mla-tejpal-tanwar.jpg",
+      "photoCredit": "PRS Legislative Research (prsindia.org), CC BY 4.0"
+    },
+    "Pataudi": {
+      "name": "Bimla Chaudhary",
+      "party": "BJP",
+      "photo": "/people/mla-bimla-chaudhary.jpg",
+      "photoCredit": "PRS Legislative Research (prsindia.org), CC BY 4.0"
+    }
+  },
+  "helplines": [
+    {
+      "label": "MCG citizen helpline",
+      "number": "18001801817"
+    },
+    {
+      "label": "MCG garbage collection",
+      "number": "18001025952"
+    }
+  ],
+  "email": "cmc@mcg.gov.in"
+}
