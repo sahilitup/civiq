@@ -10,8 +10,12 @@ import { lookupWard, lookupSeat, wardsGeojson, assemblyGeojson } from './wards.j
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(ROOT, 'public');
-const UPLOADS = process.env.UPLOADS_DIR || path.join(ROOT, 'uploads');
+const UPLOADS = path.resolve(process.env.UPLOADS_DIR || path.join(ROOT, 'uploads'));
 fs.mkdirSync(UPLOADS, { recursive: true });
+// Example-report photos that ship with the code (see tools/make-seed.mjs).
+const SEED_UPLOADS = path.join(ROOT, 'seed', 'uploads');
+if (fs.existsSync(SEED_UPLOADS)) for (const f of fs.readdirSync(SEED_UPLOADS))
+  if (!fs.existsSync(path.join(UPLOADS, f))) fs.copyFileSync(path.join(SEED_UPLOADS, f), path.join(UPLOADS, f));
 const PORT = Number(process.env.PORT || 5173);
 const VERSION = '2.0.0';
 const officials = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'officials.json'), 'utf8'));

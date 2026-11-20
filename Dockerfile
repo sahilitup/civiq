@@ -1,7 +1,8 @@
-FROM node:22-alpine
+FROM node:24-alpine
 WORKDIR /app
 COPY package.json server.js db.js wards.js ./
 COPY public ./public
+COPY seed ./seed
 COPY data/officials.json data/ward-people.json data/wards.geojson data/assembly.geojson data/changelog.json ./data/
 # Set ADMIN_PASSCODE, DATA_PASSCODE and TOKEN_SECRET as environment variables on your host.
 ENV PORT=8080 DB_PATH=/data/kachra.db UPLOADS_DIR=/data/uploads

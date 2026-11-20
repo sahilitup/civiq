@@ -6,6 +6,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DB_PATH = process.env.DB_PATH || path.join(ROOT, 'data', 'kachra.db');
 fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
+// A brand-new install (or a host without a disk, like Render's free plan) starts with the example reports.
+const SEED_DB = path.join(ROOT, 'seed', 'examples.db');
+if (!fs.existsSync(DB_PATH) && fs.existsSync(SEED_DB)) fs.copyFileSync(SEED_DB, DB_PATH);
 export const db = new DatabaseSync(DB_PATH);
 
 db.exec(`

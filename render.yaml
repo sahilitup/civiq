@@ -1,16 +1,22 @@
 # One-click deploy on Render (render.com): New → Blueprint → pick this repo.
-# The disk keeps reports and photos across restarts.
+# Free plan: no disk, so the database and photos reset on every restart or deploy;
+# the 50 example reports in seed/ are loaded again each time.
+# For permanent storage switch to `plan: starter` and add:
+#   disk: { name: data, mountPath: /data, sizeGB: 5 }  (and point DB_PATH / UPLOADS_DIR at /data)
 services:
   - type: web
     name: civiq
     runtime: docker
-    plan: starter
-    disk:
-      name: data
-      mountPath: /data
-      sizeGB: 5
+    plan: free
+    healthCheckPath: /api/status
     envVars:
       - key: DB_PATH
-        value: /data/kachra.db
+        value: /tmp/civiq/kachra.db
       - key: UPLOADS_DIR
-        value: /data/uploads
+        value: /tmp/civiq/uploads
+      - key: ADMIN_PASSCODE
+        generateValue: true
+      - key: DATA_PASSCODE
+        generateValue: true
+      - key: TOKEN_SECRET
+        generateValue: true
